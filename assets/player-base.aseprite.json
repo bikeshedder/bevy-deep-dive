@@ -1,5 +1,5 @@
 { "frames": {
-   "player-base (base) #walk-down 0.aseprite": {
+   "player-base (base) 0.aseprite": {
     "frame": { "x": 0, "y": 0, "w": 24, "h": 24 },
     "rotated": false,
     "trimmed": false,
@@ -7,7 +7,7 @@
     "sourceSize": { "w": 24, "h": 24 },
     "duration": 200
    },
-   "player-base (base) #walk-down 1.aseprite": {
+   "player-base (base) 1.aseprite": {
     "frame": { "x": 24, "y": 0, "w": 24, "h": 24 },
     "rotated": false,
     "trimmed": false,
@@ -15,7 +15,7 @@
     "sourceSize": { "w": 24, "h": 24 },
     "duration": 200
    },
-   "player-base (base) #walk-down 2.aseprite": {
+   "player-base (base) 2.aseprite": {
     "frame": { "x": 48, "y": 0, "w": 24, "h": 24 },
     "rotated": false,
     "trimmed": false,
@@ -23,7 +23,7 @@
     "sourceSize": { "w": 24, "h": 24 },
     "duration": 200
    },
-   "player-base (base) #walk-down 3.aseprite": {
+   "player-base (base) 3.aseprite": {
     "frame": { "x": 72, "y": 0, "w": 24, "h": 24 },
     "rotated": false,
     "trimmed": false,
@@ -31,7 +31,71 @@
     "sourceSize": { "w": 24, "h": 24 },
     "duration": 200
    },
-   "player-base (Sunglasses) #walk-down 0.aseprite": {
+   "player-base (base) 4.aseprite": {
+    "frame": { "x": 96, "y": 0, "w": 24, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
+    "sourceSize": { "w": 24, "h": 24 },
+    "duration": 200
+   },
+   "player-base (base) 5.aseprite": {
+    "frame": { "x": 120, "y": 0, "w": 24, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
+    "sourceSize": { "w": 24, "h": 24 },
+    "duration": 200
+   },
+   "player-base (base) 6.aseprite": {
+    "frame": { "x": 144, "y": 0, "w": 24, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
+    "sourceSize": { "w": 24, "h": 24 },
+    "duration": 200
+   },
+   "player-base (base) 7.aseprite": {
+    "frame": { "x": 168, "y": 0, "w": 24, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
+    "sourceSize": { "w": 24, "h": 24 },
+    "duration": 200
+   },
+   "player-base (base) 8.aseprite": {
+    "frame": { "x": 192, "y": 0, "w": 24, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
+    "sourceSize": { "w": 24, "h": 24 },
+    "duration": 200
+   },
+   "player-base (base) 9.aseprite": {
+    "frame": { "x": 216, "y": 0, "w": 24, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
+    "sourceSize": { "w": 24, "h": 24 },
+    "duration": 200
+   },
+   "player-base (base) 10.aseprite": {
+    "frame": { "x": 240, "y": 0, "w": 24, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
+    "sourceSize": { "w": 24, "h": 24 },
+    "duration": 200
+   },
+   "player-base (base) 11.aseprite": {
+    "frame": { "x": 264, "y": 0, "w": 24, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
+    "sourceSize": { "w": 24, "h": 24 },
+    "duration": 200
+   },
+   "player-base (Sunglasses) 0.aseprite": {
     "frame": { "x": 0, "y": 24, "w": 24, "h": 24 },
     "rotated": false,
     "trimmed": false,
@@ -39,7 +103,7 @@
     "sourceSize": { "w": 24, "h": 24 },
     "duration": 200
    },
-   "player-base (Sunglasses) #walk-down 1.aseprite": {
+   "player-base (Sunglasses) 1.aseprite": {
     "frame": { "x": 24, "y": 24, "w": 24, "h": 24 },
     "rotated": false,
     "trimmed": false,
@@ -47,7 +111,7 @@
     "sourceSize": { "w": 24, "h": 24 },
     "duration": 200
    },
-   "player-base (Sunglasses) #walk-down 2.aseprite": {
+   "player-base (Sunglasses) 2.aseprite": {
     "frame": { "x": 48, "y": 24, "w": 24, "h": 24 },
     "rotated": false,
     "trimmed": false,
@@ -55,7 +119,7 @@
     "sourceSize": { "w": 24, "h": 24 },
     "duration": 200
    },
-   "player-base (Sunglasses) #walk-down 3.aseprite": {
+   "player-base (Sunglasses) 3.aseprite": {
     "frame": { "x": 72, "y": 24, "w": 24, "h": 24 },
     "rotated": false,
     "trimmed": false,
@@ -63,128 +127,64 @@
     "sourceSize": { "w": 24, "h": 24 },
     "duration": 200
    },
-   "player-base (base) #walk-up 0.aseprite": {
-    "frame": { "x": 0, "y": 48, "w": 24, "h": 24 },
+   "player-base (Sunglasses) 4.aseprite": {
+    "frame": { "x": 96, "y": 24, "w": 24, "h": 24 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
     "sourceSize": { "w": 24, "h": 24 },
     "duration": 200
    },
-   "player-base (base) #walk-up 1.aseprite": {
-    "frame": { "x": 24, "y": 48, "w": 24, "h": 24 },
+   "player-base (Sunglasses) 5.aseprite": {
+    "frame": { "x": 120, "y": 24, "w": 24, "h": 24 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
     "sourceSize": { "w": 24, "h": 24 },
     "duration": 200
    },
-   "player-base (base) #walk-up 2.aseprite": {
-    "frame": { "x": 48, "y": 48, "w": 24, "h": 24 },
+   "player-base (Sunglasses) 6.aseprite": {
+    "frame": { "x": 144, "y": 24, "w": 24, "h": 24 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
     "sourceSize": { "w": 24, "h": 24 },
     "duration": 200
    },
-   "player-base (base) #walk-up 3.aseprite": {
-    "frame": { "x": 72, "y": 48, "w": 24, "h": 24 },
+   "player-base (Sunglasses) 7.aseprite": {
+    "frame": { "x": 168, "y": 24, "w": 24, "h": 24 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
     "sourceSize": { "w": 24, "h": 24 },
     "duration": 200
    },
-   "player-base (Sunglasses) #walk-up 0.aseprite": {
-    "frame": { "x": 0, "y": 72, "w": 24, "h": 24 },
+   "player-base (Sunglasses) 8.aseprite": {
+    "frame": { "x": 192, "y": 24, "w": 24, "h": 24 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
     "sourceSize": { "w": 24, "h": 24 },
     "duration": 200
    },
-   "player-base (Sunglasses) #walk-up 1.aseprite": {
-    "frame": { "x": 24, "y": 72, "w": 24, "h": 24 },
+   "player-base (Sunglasses) 9.aseprite": {
+    "frame": { "x": 216, "y": 24, "w": 24, "h": 24 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
     "sourceSize": { "w": 24, "h": 24 },
     "duration": 200
    },
-   "player-base (Sunglasses) #walk-up 2.aseprite": {
-    "frame": { "x": 48, "y": 72, "w": 24, "h": 24 },
+   "player-base (Sunglasses) 10.aseprite": {
+    "frame": { "x": 240, "y": 24, "w": 24, "h": 24 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
     "sourceSize": { "w": 24, "h": 24 },
     "duration": 200
    },
-   "player-base (Sunglasses) #walk-up 3.aseprite": {
-    "frame": { "x": 72, "y": 72, "w": 24, "h": 24 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
-    "sourceSize": { "w": 24, "h": 24 },
-    "duration": 200
-   },
-   "player-base (base) #walk-right 0.aseprite": {
-    "frame": { "x": 0, "y": 96, "w": 24, "h": 24 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
-    "sourceSize": { "w": 24, "h": 24 },
-    "duration": 200
-   },
-   "player-base (base) #walk-right 1.aseprite": {
-    "frame": { "x": 24, "y": 96, "w": 24, "h": 24 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
-    "sourceSize": { "w": 24, "h": 24 },
-    "duration": 200
-   },
-   "player-base (base) #walk-right 2.aseprite": {
-    "frame": { "x": 48, "y": 96, "w": 24, "h": 24 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
-    "sourceSize": { "w": 24, "h": 24 },
-    "duration": 200
-   },
-   "player-base (base) #walk-right 3.aseprite": {
-    "frame": { "x": 72, "y": 96, "w": 24, "h": 24 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
-    "sourceSize": { "w": 24, "h": 24 },
-    "duration": 200
-   },
-   "player-base (Sunglasses) #walk-right 0.aseprite": {
-    "frame": { "x": 0, "y": 120, "w": 24, "h": 24 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
-    "sourceSize": { "w": 24, "h": 24 },
-    "duration": 200
-   },
-   "player-base (Sunglasses) #walk-right 1.aseprite": {
-    "frame": { "x": 24, "y": 120, "w": 24, "h": 24 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
-    "sourceSize": { "w": 24, "h": 24 },
-    "duration": 200
-   },
-   "player-base (Sunglasses) #walk-right 2.aseprite": {
-    "frame": { "x": 48, "y": 120, "w": 24, "h": 24 },
-    "rotated": false,
-    "trimmed": false,
-    "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
-    "sourceSize": { "w": 24, "h": 24 },
-    "duration": 200
-   },
-   "player-base (Sunglasses) #walk-right 3.aseprite": {
-    "frame": { "x": 72, "y": 120, "w": 24, "h": 24 },
+   "player-base (Sunglasses) 11.aseprite": {
+    "frame": { "x": 264, "y": 24, "w": 24, "h": 24 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 24, "h": 24 },
@@ -197,7 +197,7 @@
   "version": "1.2.33-x64",
   "image": "player-base.png",
   "format": "RGBA8888",
-  "size": { "w": 96, "h": 144 },
+  "size": { "w": 288, "h": 48 },
   "scale": "1",
   "frameTags": [
    { "name": "walk-down", "from": 0, "to": 3, "direction": "forward" },
