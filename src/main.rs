@@ -13,15 +13,25 @@ use bevy::{
 #[derive(Debug, Component)]
 struct Player {
     name: String,
+    key_left: KeyCode,
+    key_right: KeyCode,
+    key_up: KeyCode,
+    key_down: KeyCode,
 }
 
 fn player_input(keyboard_input: Res<Input<KeyCode>>, mut query: Query<(&Player, &mut Transform)>) {
     for (player, mut transform) in query.iter_mut() {
-        if keyboard_input.pressed(KeyCode::Right) {
+        if keyboard_input.pressed(player.key_left) {
+            transform.translation.x -= 1.0;
+        }
+        if keyboard_input.pressed(player.key_right) {
             transform.translation.x += 1.0;
         }
-        if keyboard_input.pressed(KeyCode::Left) {
-            transform.translation.x -= 1.0;
+        if keyboard_input.pressed(player.key_down) {
+            transform.translation.y -= 1.0;
+        }
+        if keyboard_input.pressed(player.key_up) {
+            transform.translation.y += 1.0;
         }
     }
 }
@@ -44,6 +54,10 @@ fn create_entities(mut commands: Commands) {
         })
         .insert(Player {
             name: "Player 1".into(),
+            key_left: KeyCode::Left,
+            key_right: KeyCode::Right,
+            key_up: KeyCode::Up,
+            key_down: KeyCode::Down,
         });
 }
 
