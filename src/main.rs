@@ -1,12 +1,12 @@
 use bevy::{
     core::FixedTimestep,
     input::Input,
-    math::Vec3,
+    math::{Vec2, Vec3},
     prelude::{
-        App, Color, Commands, Component, Entity, KeyCode, OrthographicCameraBundle, Query, Res,
-        SystemSet, Transform, UiCameraBundle,
+        App, AssetServer, Assets, Color, Commands, Component, Entity, KeyCode,
+        OrthographicCameraBundle, Query, Res, ResMut, SystemSet, Transform, UiCameraBundle,
     },
-    sprite::{Sprite, SpriteBundle},
+    sprite::{Sprite, SpriteBundle, TextureAtlas, SpriteSheetBundle},
     DefaultPlugins,
 };
 
@@ -36,20 +36,22 @@ fn player_input(keyboard_input: Res<Input<KeyCode>>, mut query: Query<(&Player, 
     }
 }
 
-fn create_entities(mut commands: Commands) {
+fn create_entities(
+    mut commands: Commands,
+    asset_server: Res<AssetServer>,
+    mut texture_atlases: ResMut<Assets<TextureAtlas>>,
+) {
     commands.spawn_bundle(OrthographicCameraBundle::new_2d());
     commands.spawn_bundle(UiCameraBundle::default());
+
+    let texture_handle = asset_server.load("player-base.png");
+    let texture_atlas = TextureAtlas::from_grid(texture_handle, Vec2::new(24.0, 24.0), 12, 1);
+    let texture_atlas_handle = texture_atlases.add(texture_atlas);
+
     commands
-        .spawn_bundle(SpriteBundle {
-            sprite: Sprite {
-                color: Color::rgb(255.0, 255.0, 255.0),
-                ..Default::default()
-            },
-            transform: Transform {
-                translation: Vec3::new(0.0, 0.0, 0.0),
-                scale: Vec3::new(50.0, 50.0, 0.0),
-                ..Default::default()
-            },
+        .spawn_bundle(SpriteSheetBundle {
+            texture_atlas: texture_atlas_handle,
+            transform: Transform::from_scale(Vec3::splat(6.0)),
             ..Default::default()
         })
         .insert(Player {
