@@ -6,7 +6,7 @@ use bevy::{
         App, AssetServer, Assets, Color, Commands, Component, Entity, KeyCode,
         OrthographicCameraBundle, Query, Res, ResMut, SystemSet, Transform, UiCameraBundle,
     },
-    sprite::{Sprite, SpriteBundle, TextureAtlas, SpriteSheetBundle},
+    sprite::{Sprite, SpriteBundle, SpriteSheetBundle, TextureAtlas, TextureAtlasSprite},
     DefaultPlugins,
 };
 
@@ -19,8 +19,12 @@ struct Player {
     key_down: KeyCode,
 }
 
-fn player_input(keyboard_input: Res<Input<KeyCode>>, mut query: Query<(&Player, &mut Transform)>) {
-    for (player, mut transform) in query.iter_mut() {
+fn player_input(
+    keyboard_input: Res<Input<KeyCode>>,
+    mut query: Query<(&Player, &mut Transform, &mut TextureAtlasSprite)>,
+) {
+    for (player, mut transform, mut sprite) in query.iter_mut() {
+        sprite.index = (sprite.index + 1) % 4;
         if keyboard_input.pressed(player.key_left) {
             transform.translation.x -= 1.0;
         }
