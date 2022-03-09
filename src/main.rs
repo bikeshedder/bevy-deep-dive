@@ -1,12 +1,13 @@
 use bevy::{
+    core::FixedTimestep,
     input::Input,
     math::Vec3,
     prelude::{
         App, Color, Commands, Component, Entity, KeyCode, OrthographicCameraBundle, Query, Res,
-        Transform, UiCameraBundle, SystemSet,
+        SystemSet, Transform, UiCameraBundle,
     },
     sprite::{Sprite, SpriteBundle},
-    DefaultPlugins, core::FixedTimestep,
+    DefaultPlugins,
 };
 
 #[derive(Debug, Component)]
@@ -15,14 +16,11 @@ struct Player {
 }
 
 fn player_input(keyboard_input: Res<Input<KeyCode>>, mut query: Query<(&Player, &mut Transform)>) {
-    println!("System...");
     for (player, mut transform) in query.iter_mut() {
         if keyboard_input.pressed(KeyCode::Right) {
-            println!("{:?} : RIGHT", player);
             transform.translation.x += 1.0;
         }
         if keyboard_input.pressed(KeyCode::Left) {
-            println!("{:?} : LEFT", player);
             transform.translation.x -= 1.0;
         }
     }
@@ -31,18 +29,22 @@ fn player_input(keyboard_input: Res<Input<KeyCode>>, mut query: Query<(&Player, 
 fn create_entities(mut commands: Commands) {
     commands.spawn_bundle(OrthographicCameraBundle::new_2d());
     commands.spawn_bundle(UiCameraBundle::default());
-    commands.spawn_bundle(SpriteBundle {
-        sprite: Sprite {
-            color: Color::rgb(255.0, 255.0, 255.0),
+    commands
+        .spawn_bundle(SpriteBundle {
+            sprite: Sprite {
+                color: Color::rgb(255.0, 255.0, 255.0),
+                ..Default::default()
+            },
+            transform: Transform {
+                translation: Vec3::new(0.0, 0.0, 0.0),
+                scale: Vec3::new(50.0, 50.0, 0.0),
+                ..Default::default()
+            },
             ..Default::default()
-        },
-        transform: Transform {
-            translation: Vec3::new(0.0, 0.0, 0.0),
-            scale: Vec3::new(50.0, 50.0, 0.0),
-            ..Default::default()
-        },
-        ..Default::default()
-    });
+        })
+        .insert(Player {
+            name: "Player 1".into(),
+        });
 }
 
 const TIME_STEP: f32 = 1.0 / 60.0;
