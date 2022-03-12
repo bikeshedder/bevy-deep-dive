@@ -121,9 +121,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8da52d66c7071e2e3fa2a1e5c6d088fec47b593032b254f5e980de8ea54454d6"
 
 [[package]]
-name = "aseprite-reader"
+name = "aseprite-reader2"
 version = "0.1.0"
-source = "git+https://github.com/mdenchev/aseprite-reader#5a0b4d1224aa1b8ca3cf7a8b85cfdf1b66e8725f"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "91a61fb159bdc3d67d6096ca31b2ce8c3277a4a6ada861404f48853ced237630"
 dependencies = [
  "flate2",
  "image",
@@ -217,7 +218,7 @@ name = "bevy-deep-dive"
 version = "0.1.0"
 dependencies = [
  "bevy",
- "bevy_spicy_aseprite",
+ "bevy_aseprite",
 ]
 
 [[package]]
@@ -232,6 +233,31 @@ dependencies = [
  "bevy_utils",
  "wasm-bindgen",
  "web-sys",
+]
+
+[[package]]
+name = "bevy_aseprite"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "25f8e9122d2116990d115dae1dbe35f5939d3fccf0eafdf2dd4e8ad0398db7b5"
+dependencies = [
+ "anyhow",
+ "aseprite-reader2",
+ "bevy",
+ "bevy_aseprite_derive",
+]
+
+[[package]]
+name = "bevy_aseprite_derive"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b7f528bd501518f79ceeb84e4d36b032b27e6ca91ce04c57f5de24c0bf41ba2b"
+dependencies = [
+ "aseprite-reader2",
+ "heck",
+ "proc-macro-error",
+ "quote",
+ "syn",
 ]
 
 [[package]]
@@ -606,29 +632,6 @@ dependencies = [
  "serde",
  "thiserror",
  "uuid",
-]
-
-[[package]]
-name = "bevy_spicy_aseprite"
-version = "0.6.0"
-source = "git+https://github.com/mdenchev/bevy_spicy_aseprite#433fe1332a21468cb9035b8a03fc3b813850beec"
-dependencies = [
- "anyhow",
- "aseprite-reader",
- "bevy",
- "bevy_spicy_aseprite_derive",
-]
-
-[[package]]
-name = "bevy_spicy_aseprite_derive"
-version = "0.1.0"
-source = "git+https://github.com/mdenchev/bevy_spicy_aseprite#433fe1332a21468cb9035b8a03fc3b813850beec"
-dependencies = [
- "aseprite-reader",
- "heck",
- "proc-macro-error",
- "quote",
- "syn",
 ]
 
 [[package]]

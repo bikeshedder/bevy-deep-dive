@@ -8,4 +8,4 @@ resolver = "2" # Important! wgpu/Bevy needs this!
 
 [dependencies]
 bevy = { version = "0.6.1", features = ["dynamic"] }
-bevy_spicy_aseprite = { git = "https://github.com/mdenchev/bevy_spicy_aseprite" }
+bevy_aseprite = "0.6.0"

@@ -8,12 +8,10 @@ use bevy::{
     },
     DefaultPlugins,
 };
-use bevy_spicy_aseprite::{
-    AsepriteAnimation, AsepriteAnimationState, AsepriteBundle, AsepritePlugin,
-};
+use bevy_aseprite::{AsepriteAnimation, AsepriteBundle, AsepritePlugin};
 
 mod sprites {
-    use bevy_spicy_aseprite::aseprite;
+    use bevy_aseprite::aseprite;
     aseprite!(pub Player, "assets/player-base.aseprite");
 }
 
